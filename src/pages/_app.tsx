@@ -6,7 +6,7 @@ import { trpc } from '~/utils/trpc';
 
 export type NextPageWithLayout<
   TProps = Record<string, unknown>,
-  TInitialProps = TProps,
+  TInitialProps = TProps
 > = NextPage<TProps, TInitialProps> & {
   getLayout?: (page: ReactElement) => ReactNode;
 };
