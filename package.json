@@ -1,6 +1,12 @@
 {
-  "name": "starter trpc test",
-  "version": "0.0.1",
+  "name": "blog",
+  "version": "0.1.0",
+  "description": "Tutorial and template for creating a full stack application with TRPC + Prisma + AWS deployment",
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
       "dev": "next dev"
   },
