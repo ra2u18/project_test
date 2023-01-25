@@ -81,5 +81,5 @@ model TestResult {
 
 enum UserRole {
   STUDENT
-  TEACHER
+  ADMIN 
 }
