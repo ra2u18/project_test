@@ -13,8 +13,7 @@ const config: {
   SERVER_PORT: parseInt(process.env.SERVER_PORT as string, 10) || 8000,
   ORIGIN: (process.env.ORIGIN as string) || 'http://localhost:3000',
   DATABASE_URL: (process.env.DATABASE_URL as string) || 'MISSING_DB_URI',
-  NODE_ENV:
-    (process.env.NODE_ENV as NODE_ENV_TYPE) || NODE_ENV_TYPE.DEVELOPMENT,
+  NODE_ENV: (process.env.NODE_ENV as NODE_ENV_TYPE) || NODE_ENV_TYPE.DEVELOPMENT,
 };
 
 export { config };
