@@ -4,7 +4,7 @@ import { publicProcedure, router } from '../trpc';
 
 export const appRouter = router({
   healthcheck: publicProcedure.query(async () => {
-      throw new TRPCError({ code: 'BAD_REQUEST' });
+    throw new TRPCError({ code: 'BAD_REQUEST' });
   }),
 });
 
