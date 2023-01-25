@@ -1,10 +1,11 @@
-/**
- * This file contains the root router of your tRPC-backend
- */
+import { TRPCError } from '@trpc/server';
+import { prisma } from '../prisma';
 import { publicProcedure, router } from '../trpc';
 
 export const appRouter = router({
-  healthcheck: publicProcedure.query(() => 'yay!'),
+  healthcheck: publicProcedure.query(async () => {
+      throw new TRPCError({ code: 'BAD_REQUEST' });
+  }),
 });
 
 export type AppRouter = typeof appRouter;
